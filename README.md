@@ -29,4 +29,5 @@ The project utilizes the following libraries:
 There is no need for any additional development for usage. Once the blog posts are automatically fetched, they will be cached. When the same parameters are used in subsequent requests, the cached data will be returned. To customize, refer to axios-cache-interceptor guide.
 
 ### License
+
 This project is licensed under the MIT license. For more information, see the LICENSE file.
