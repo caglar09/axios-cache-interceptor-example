@@ -1,3 +1,4 @@
+// from: https://jsonplaceholder.typicode.com/comments
 export type CommentViewModel = {
   postId: number;
   id: number;

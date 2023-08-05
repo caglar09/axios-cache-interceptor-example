@@ -1,6 +1,7 @@
 import { CommentViewModel } from "./Comment";
 import { PostViewModel } from "./Post";
 
-export type PostDetailViewModel = PostViewModel &{
-    comments?:CommentViewModel[]
+// from: https://jsonplaceholder.typicode.com/posts & https://jsonplaceholder.typicode.com/comments
+export type PostDetailViewModel = PostViewModel & {
+    comments?: CommentViewModel[]
 }

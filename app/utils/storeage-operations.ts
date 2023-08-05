@@ -2,7 +2,8 @@ import { MMKV } from "react-native-mmkv";
 
 const storage = new MMKV({ id: "global-storage" });
 
-const getStorageData =<T extends any = any> (key: string): T => {
+// Retrieves data from storage based on a given key.
+const getStorageData = <T extends any = any>(key: string): T => {
 	try {
 		const stringData = storage.getString(key);
 
@@ -13,6 +14,7 @@ const getStorageData =<T extends any = any> (key: string): T => {
 	}
 };
 
+// Sets the data in the storage with the given key.
 const setStorageData = (key: string, data: any): boolean => {
 	try {
 		const stringData = JSON.stringify(data);
@@ -24,6 +26,7 @@ const setStorageData = (key: string, data: any): boolean => {
 	}
 };
 
+// Removes the specified key from the storage.
 const removeStoreageData = (key: string): boolean => {
 	try {
 		storage.delete(key);

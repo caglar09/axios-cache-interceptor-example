@@ -1,7 +1,7 @@
 import { CacheRequestConfig, CacheAxiosResponse } from "axios-cache-interceptor";
-import  { axios } from "./api-cache-provider";
+import { axios } from "./api-cache-provider";
 
-const get = <T extends any=any>(url: string, config?: CacheRequestConfig): Promise<CacheAxiosResponse<T>> => {
+const get = <T extends any = any>(url: string, config?: CacheRequestConfig): Promise<CacheAxiosResponse<T>> => {
 	return axios.get(url, config);
 };
 

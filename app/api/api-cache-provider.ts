@@ -7,7 +7,7 @@ import { StorageOperations } from "../utils";
 AxiosProvider.defaults.headers["Content-Type"] = "application/json";
 AxiosProvider.defaults.baseURL = ENV.BASE_API_URL;
 
-// generate key for each request
+// Custom cache stroage by mmkv
 const myStorage = buildStorage({
 	find: (key, currentRequest) => {
 		return StorageOperations.getStorageData(key)
@@ -20,6 +20,7 @@ const myStorage = buildStorage({
 	}
 });
 
+// axios instance
 const axios = setupCache(AxiosProvider, {
 	debug: console.log,
 	generateKey: buildKeyGenerator((request) => ({
