@@ -1,32 +1,32 @@
-# Proje Adı
+# Project
 
-Bu proje, [proje amacını ve işlevini kısaca açıklayın].
+This GitHub repository presents a sample project that utilizes the axios-cache-interceptor middleware. The project is created to demonstrate how to use the axios-cache-interceptor caching middleware.
 
-## Başlangıç
+The sample project makes HTTP requests using Axios with a caching strategy that generates a cache key based on the request URL and parameters. The first time a request is made, the response is cached, and subsequent requests to the same URL utilize the cached response.
 
-Bu talimatlar, projeyi yerel makinenizde nasıl çalıştıracağınızı ve geliştirmeye başlayacağınızı anlatır.
+### Technologies Used
 
-### Önkoşullar
+The project utilizes the following libraries:
 
-Projenin çalışması için aşağıdaki yazılımların yüklü olması gerekmektedir:
+- Expo
+- react-navigation
+- react-native-mmkv
+- typescript
+- await-to-js
+- axios
+- axios-cache-interceptor
 
-- Node.js (sürüm x.x.x)
-- npm (sürüm x.x.x)
+### Installation
 
-### Kurulum
+1.  Clone the project: `git clone https://github.com/caglar09/axios-cache-interceptor-example.git`
+2.  Navigate to the project directory:`cd axios-cache-interceptor-example`
+3.  Install the required packages: `npm install`
+4.  Install the required packages for iOS: `cd ios && pod install && cd ..`
+5.  Start the project: `npm run ios`
 
-1. Proje dizinine gidin: `cd proje-klasoru`
-2. Gerekli paketleri yüklemek için aşağıdaki komutu çalıştırın: `npm install`
-3. Proje'yi başlatmak için aşağıdaki komutu çalıştırın: `npm start`
+### Usage
 
-## Kullanım
+There is no need for any additional development for usage. Once the blog posts are automatically fetched, they will be cached. When the same parameters are used in subsequent requests, the cached data will be returned. To customize, refer to axios-cache-interceptor guide.
 
-[Projenin nasıl kullanılacağını, hangi komutların çalıştırılacağını vb. açıklayın]
-
-## Lisans
-
-Bu proje [lisans adını ve sürümünü belirtin]. Daha fazla bilgi için `LICENSE` dosyasına bakın.
-
-## İletişim
-
-[Projeyle ilgili sorular, geri bildirimler veya iletişim bilgileri hakkında bilgi verin]
+### License
+This project is licensed under the MIT license. For more information, see the LICENSE file.
